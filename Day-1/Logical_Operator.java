@@ -11,7 +11,7 @@ public class Logical_Operator {
         }
         else
         {
-            System.out.println("Number 2 is Greater than Number 1");
+            System.out.println("Number 1 is Greater than Number 2 ");
         }
     }
 }
