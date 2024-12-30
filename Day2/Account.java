@@ -21,8 +21,8 @@ class Account
     }
     public static void main(String[] args) 
     {
-        Account acc1 = new Account(12345);
-        Account acc2 = new Account(67890, 500.0);
+        Account acc1=new Account(12345);
+        Account acc2=new Account(67890, 500.0);
         acc1.displayDetails();
         acc2.displayDetails();
     }
