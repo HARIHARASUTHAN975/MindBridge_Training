@@ -5,44 +5,36 @@ import java.lang.reflect.Method;
 public class Reflection {
         public static void main(String[] args) {
             try {
-                Class cls=Class.forName("Reflection.Person");
-                Constructor con[]=cls.getDeclaredConstructors();
+                Class class1=Class.forName("Reflection.Person");
+                Constructor constructors[]=class1.getDeclaredConstructors();
                 System.out.println("Constructors:");
-                for(int i=0;i<con.length;i++)
+                for(int i=0;i<constructors.length;i++)
                 {
-                    System.out.println(con[i]);
+                    System.out.println(constructors[i]);
                 }
-                Method met[]= cls.getDeclaredMethods();
+                Method method[]= class1.getDeclaredMethods();
                 System.out.println("Methods:");
-                for(int i=0;i<met.length;i++)
+                for(int i=0;i<method.length;i++)
                 {
-                    System.out.println(met[i]);
+                    System.out.println(method[i]);
                 }
-                Field fie[]=cls.getDeclaredFields();
+                Field field[]=class1.getDeclaredFields();
                 System.out.println("Fields:");
-                for(int i=0;i<fie.length;i++)
+                for(int i=0;i<field.length;i++)
                 {
-                    System.out.println(fie[i]);
+                    System.out.println(field[i]);
                 }
-                Person p1=(Person)con[1].newInstance("Hariharasuthan M","Erode","Software Developer");
-                for(int i=0;i<met.length;i++)
+                Person p1=(Person)constructors[0].newInstance("Hariharasuthan M","Erode");
+                for(int i=0;i<method.length;i++)
                 {
-                    if(met[i].getName().indexOf("getDetails")!=-1)
+                    if(method[i].getName().indexOf("getDisplay")!=-1)
                     {
                         System.out.println("Person Details:");
-                        met[i].invoke(p1);
+                        method[i].setAccessible(true);
+                        method[i].invoke(p1);
                     }
                 }
-                Person p2=(Person)con[0].newInstance("Computer Science and Engineering");
-                for(int i=0;i<met.length;i++)
-                {
-                    if(met[i].getName().indexOf("getDept")!=-1)
-                    {
-                        System.out.println("Department:");
-                        met[i].setAccessible(true);
-                        met[i].invoke(p2);
-                    }
-                }
+
             }
             catch(Exception e) {
                 e.printStackTrace();
