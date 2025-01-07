@@ -1,5 +1,5 @@
 import java.util.*;
-public class Logical_Operator {
+public class LogicalOperator {
     public static void main(String args[])
     {
         Scanner obj=new Scanner(System.in);
