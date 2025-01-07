@@ -1,7 +1,7 @@
 import java.io.*;
 import static java.lang.Math.*;
 import java.util.Scanner;
-public class hypotanuse
+public class Hypotanuse
 {
     public static void main(String args[])
     {
