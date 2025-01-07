@@ -1,5 +1,5 @@
 import java.util.*;
-public class Primitive_Type_Conversion
+public class PrimitiveTypeConversion
 {
     public static void main(String args[])
     {
