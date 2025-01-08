@@ -10,20 +10,20 @@ public class StudentGradeManagement {
             vector.add(Integer.parseInt(str[i]));
         }
         vector.remove(ind);
-        int Max=Integer.MIN_VALUE;
-        int Min=Integer.MAX_VALUE;
-        double Avg=0;
-        int Sum=0;
+        int Maximum=Integer.MIN_VALUE;
+        int Minimum=Integer.MAX_VALUE;
+        double Average=0;
+        int add=0;
         for(int i=0;i<vector.size();i++)
         {
-            Max=Math.max(vector.get(i),Max);
-            Min=Math.min(vector.get(i),Min);
-            Sum+=vector.get(i);
+            Maximum=Math.max(vector.get(i),Maximum);
+            Minimum=Math.min(vector.get(i),Minimum);
+            add+=vector.get(i);
         }
-        Avg=Sum/vector.size();
+        Average=add/vector.size();
         System.out.println("Grades: "+vector);
-        System.out.println("Highest Grade: "+Max);
-        System.out.println("Lowest Grade: "+Min);
-        System.out.println("Average Grade: "+Avg);
+        System.out.println("Highest Grade: "+Maximum);
+        System.out.println("Lowest Grade: "+Minimum);
+        System.out.println("Average Grade: "+Average);
     }
 }
