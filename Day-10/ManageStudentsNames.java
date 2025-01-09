@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Maps
+public class ManageStudentsNames
 {
     public static void main(String [] srgs)
     {
