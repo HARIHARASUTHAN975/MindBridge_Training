@@ -26,10 +26,10 @@ public class AverageGPACalculator {
         double avggpa=Average(list);
         System.out.println("Average GPA : "+avggpa);
     }
-    public static double Average(List<Student> l)
+    public static double Average(List<Student> list)
     {
         final double[] result= {0};
-        l.forEach(s-> result[0] +=s.gpa);
-        return result[0] /l.size();
+        list.forEach(s-> result[0] +=s.gpa);
+        return result[0] /list.size();
     }
 }
