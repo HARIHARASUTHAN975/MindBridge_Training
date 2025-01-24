@@ -53,7 +53,7 @@ class Main6
     public static void main(String[] args)
     {
         List<Student_Data> students = new ArrayList<Student_Data>();
-        students.add(new Student_Data("John", "Computer Science ", new int[]{88, 92, 74, 98, 78}));
+        students.add(new Student_Data("Kalai", "Computer Science ", new int[]{88, 92, 74, 98, 78}));
         students.add(new Student_Data("Mohan", "Mathematics", new int[]{70, 78, 88, 70, 45}));
         students.add(new Student_Data("Shanmugapriyan", "Physics", new int[]{40, 45, 50, 58, 72}));
         students.add(new Student_Data("Nagul", "Physics", new int[]{99,92, 90, 93, 95}));
