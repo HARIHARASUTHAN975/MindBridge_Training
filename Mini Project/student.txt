@@ -1,0 +1,30 @@
+
+Student ID = 1
+Name = Hari
+Age = 20
+Grade = B
+E=mail Id = Hari1@gmail.com
+
+Student ID = 2
+Name = Mani
+Age = 20
+Grade = U
+E=mail Id = Mani123@gmail.com
+
+Student ID = 3
+Name = Shanmugapriyan
+Age = 20
+Grade = A
+E=mail Id = Shanmuga12@gmail.com
+
+Student ID = 4
+Name = Mohan
+Age = 20
+Grade = B
+E=mail Id = Mohan1@gmail.com
+
+Student ID = 8
+Name = Anand
+Age = 20
+Grade = B
+E=mail Id = Anand123@gmail.com
