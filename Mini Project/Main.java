@@ -97,7 +97,7 @@ public class Main {
 
     public static void main(String args[])
     {
-
+        loadStudentsFromFile();
         HashMap<Integer,Student>data =loadStudentsFromFile();
         Scanner obj=new Scanner(System.in);
         boolean Boolean1=true;
