@@ -40,3 +40,21 @@ The project structure of the Student Management System is organized as follows:
 - The student data is stored in `student.txt`.
 - If no file exists, the system will create one upon saving records.
 - Data is loaded automatically when retrieving records.
+
+## How to Run
+
+To run the project, ensure you have Java installed and use a terminal or an IDE:
+
+1. **Using an IDE**:
+   - Open the project.
+   - Compile and run `StudentManagementSystem.java`.
+
+2. **Using the command line**:
+   - Navigate to the project folder.
+   - Compile all Java files:
+     ```sh
+     javac MiniProject/*.java
+     ```
+   - Execute the program:
+     ```sh
+     java MiniProject.StudentManagementSystem
